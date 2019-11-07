@@ -18,7 +18,7 @@ public class CEvent implements Serializable {
         private static String dateDisplayPattern;
         private String startDateTimeDisplayFormat;
         private String endDateTimeDisplayFormat;
-
+        private boolean status;
 
     CEvent(String name, LocalDateTime startDateTime){
     this.name = name;
@@ -127,5 +127,12 @@ public static String getDateDisplayPattern(){
           .append(getEndDateTime() != null? getEndDateTime() + " " :"BRAK ").append(getLocalization() != null? getLocalization() + " " :"BRAK ")
           .append(getDescription() != null? getDescription():"BRAK");
         return   sB.toString();
+    }
+
+    public void setExecStatus(boolean execStatus){
+    this.status = execStatus;
+    }
+    public boolean getExecStatus(){
+        return status;
     }
 }
