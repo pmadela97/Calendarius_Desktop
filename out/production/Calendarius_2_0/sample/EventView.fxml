@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EventViewController">
+   <children>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" text="Nazwa wydarzenia">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" prefHeight="30.0" prefWidth="500.0" />
+      <Label fx:id="nameErrorLabel" alignment="CENTER" maxHeight="0.0" minHeight="0.0" prefHeight="0" prefWidth="500.0" textFill="RED" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" text="Początek">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="500.0" spacing="10.0">
+         <children>
+            <DatePicker fx:id="startDatePicker" prefHeight="30.0" prefWidth="200.0" />
+            <ComboBox fx:id="startHourPicker" prefHeight="30.0" prefWidth="70.0" />
+            <ComboBox fx:id="startMinutesPicker" prefHeight="30.0" prefWidth="70.0" />
+         </children>
+      </HBox>
+      <Label fx:id="startDateTimeErrorLabel" alignment="CENTER" maxHeight="0.0" minHeight="0.0" prefHeight="0" prefWidth="500.0" textFill="RED" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" text="Koniec">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <DatePicker fx:id="endDatePicker" prefHeight="30.0" prefWidth="200.0" />
+            <ComboBox fx:id="endHourPicker" prefHeight="30.0" prefWidth="70.0" />
+            <ComboBox fx:id="endMinutesPicker" prefHeight="30.0" prefWidth="70.0" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" text="Lokalizacja">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="localizationTextField" prefHeight="30.0" prefWidth="500.0" />
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" text="Opis">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionTextArea" prefHeight="120.0" prefWidth="500.0" />
+      <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="500.0" spacing="100.0">
+         <children>
+           <Button fx:id="addButton" mnemonicParsing="false" onAction="#saveEvent" prefHeight="30.0" prefWidth="125.0" text="Zapisz" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelEventView" prefHeight="30.0" prefWidth="125.0" text="Anuluj" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="40.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </padding>
+</VBox>

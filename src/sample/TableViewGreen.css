@@ -1,0 +1,38 @@
+.table-view {
+    -fx-background-color: #0fff00;
+
+}
+.table-row-cell .text{
+    -fx-fill: #000000   ;
+}
+.table-row-cell{
+    -fx-background-color: #0fff00;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #0eb400;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+.table-row-cell:selected{
+    -fx-background-color: #30aac2;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+.table-row-cell:selected .text{
+    -fx-fill: #FFFFFF;
+}
+
+
+.column-header-background{
+    -fx-max-height: 0;
+    -fx-max-width: 0;
+    -fx-min-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+    -fx-min-width: 0;
+    -fx-pref-height: 0;
+    -fx-pref-width: 0;
+}

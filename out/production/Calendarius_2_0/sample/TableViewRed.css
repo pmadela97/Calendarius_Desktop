@@ -1,0 +1,26 @@
+.table-view {
+-fx-background-color: #ff0000;
+
+}
+.table-row-cell .text{
+    -fx-fill: #FFFFFF;
+}
+.table-row-cell{
+    -fx-background-color: #ff0000;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #a70000;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+.table-row-cell:selected{
+    -fx-background-color: #30aac2;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+.table-row-cell:selected .text{
+    -fx-fill: #000000;
+}
